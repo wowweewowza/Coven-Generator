@@ -13,11 +13,19 @@
 
     <h1>Archived Object Warning Classification</h1>
 
-    <div id="symbol-container">
-        <img src="https://coven.aresmush.com/file/warning_symbols/type.png"></img>
-    </div>
+    <div class="sym-container">
+        <div class="sym-canvas">
+            <!--This is the base, it always stays-->
+            <img id="type" class="sym-layer" src="https://coven.aresmush.com/game/uploads/warning_symbols/type.png">
 
-    <button onclick="generate()">Randomize</button>
+            <!--This is the symbol in the center-->
+            <img id="psychological" class="sym-layer" src="https://coven.aresmush.com/game/uploads/warning_symbols/psychological.png">
+            <!--These are the self described classification triangles, rated 1-5. Base name should not change.-->
+            <img id="containability_4" class="sym-layer" src="https://coven.aresmush.com/game/uploads/warning_symbols/containability_4.png">
+            <img id="ease_of_use_1" class="sym-layer" src="https://coven.aresmush.com/game/uploads/warning_symbols/ease_of_use_1.png">
+            <img id="danger_level_2" class="sym-layer" src="https://coven.aresmush.com/game/uploads/warning_symbols/danger_level_2.png">
+        </div>
+    </div>
 
 </body>
 
