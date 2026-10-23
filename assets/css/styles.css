@@ -10,7 +10,7 @@ body {
     padding: 20px;
 }
 
-.sym-canvas {
+#sym-canvas {
     position: relative;
     height: 500px;
     width: 500px;

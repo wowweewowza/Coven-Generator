@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Archived Object Warning Classification</title>
+    <script src="assets/js/html2canvas.js"></script>
     <script src="assets/js/jquery.js"></script>
 </head>
 
@@ -14,7 +15,7 @@
     <h1>Archived Object Warning Classification</h1>
 
     <div class="sym-container">
-        <div class="sym-canvas">
+        <div id="sym-canvas">
             <!--This is the base, it always stays-->
             <img id="base" class="sym-layer" src="/warning_symbols/type.png">
 
@@ -63,7 +64,7 @@
                 <option value="/warning_symbols/danger_level_2.png">Level 2</option>
             </select>
         </div>
-        <button onclick="downloadDoll()">Download Final Picture</button>
+        <button onclick="downloadSymbol()">Download Final Picture</button>
     </div>
 
 </body>
