@@ -5,17 +5,33 @@ body {
     padding: 20px;
 }
 
+.paperdoll-wrap {
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+}
+
 .sym-container {
+    aspect-ratio: 1;
     border: 3px solid black;
+    margin: 20px;
     padding: 20px;
+    max-width: 500px;
 }
 
 #sym-canvas {
+    aspect-ratio: 1;
     position: relative;
-    height: 500px;
-    width: 500px;
+    width: 100%;
     overflow: hidden;
 }
+
+#sym-canvas img {
+    aspect-ratio: 1;
+    width: 100%;
+}
+
 .sym-layer {
     position: absolute;
     top: 0;
@@ -24,4 +40,30 @@ body {
     height: 100%;
     object-fit: contain;
     pointer-events: none;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.menu-group {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0px;
+}
+
+.menu-group label {
+    margin-right: auto;
+}
+
+.menu-group select {
+    margin-left: auto;
+}
+
+@media (max-width: 1000px) {
+    .paperdoll-wrap {
+        flex-direction: column;
+    }
 }

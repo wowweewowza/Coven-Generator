@@ -13,59 +13,76 @@
 
     <h1>Archived Object Warning Classification</h1>
 
-    <div class="sym-container">
-        <div id="sym-canvas">
-            <!--This is the base, it always stays-->
-            <img id="base" class="sym-layer" src="./assets/png/type.png">
+    <div class="paperdoll-wrap">
 
-            <!--This is the symbol in the center-->
-            <img id="type" class="sym-layer" src="" alt="">
-            <!--These are the self described classification triangles, rated 1-5. Base name should not change.-->
-            <img id="containability" class="sym-layer" src="" alt="">
-            <img id="ease_of_use" class="sym-layer" src="" alt="">
-            <img id="danger_level" class="sym-layer" src="" alt="">
-        </div>
-    </div>
+        <div class="sym-container">
+            <div id="sym-canvas">
+                <!--This is the base, it always stays-->
+                <img id="base" class="sym-layer" src="./assets/png/type.png">
 
-    <div class="controls">
-        <!-- Type Menu -->
-        <div class="menu-group">
-            <label for="type-select">Choose Type:</label>
-            <select id="type-select" onchange="changeLayer('type', this.value)">
-                <option value="">None</option>
-                <option value="./assets/png/psychological.png">Psychological</option>
-            </select>
+                <!--This is the symbol in the center-->
+                <img id="type" class="sym-layer" src="./assets/png/blank.png" alt="">
+                <!--These are the self described classification triangles, rated 1-5. Base name should not change.-->
+                <img id="containability" class="sym-layer" src="./assets/png/blank.png" alt="">
+                <img id="ease_of_use" class="sym-layer" src="./assets/png/blank.png" alt="">
+                <img id="danger_level" class="sym-layer" src="./assets/png/blank.png" alt="">
+            </div>
         </div>
 
-        <!-- Containability Menu -->
-        <div class="menu-group">
-            <label for="containability-select">Choose Containability:</label>
-            <select id="containability-select" onchange="changeLayer('containability', this.value)">
-                <option value="">None</option>
-                <option value="./assets/png/containability_4.png">Level 4</option>
-            </select>
-        </div>
+        <div class="controls">
+            <!-- Type Menu -->
+            <div class="menu-group">
+                <label for="type-select">Choose Type:</label>
+                <select id="type-select" onchange="changeLayer('type', this.value)">
+                    <option value="">None</option>
+                    <option value="./assets/png/biological.png">Biological</option>
+                    <option value="./assets/png/kinetic.png">Kinetic</option>
+                    <option value="./assets/png/psychological.png">Psychological</option>
+                    <option value="./assets/png/spatial.png">Spatial</option>
+                    <option value="./assets/png/temporal.png">Temporal</option>
+                </select>
+            </div>
 
-        <!-- ease_of_use Menu -->
-        <div class="menu-group">
-            <label for="ease_of_use-select">Choose Ease of Use:</label>
-            <select id="ease_of_use-select" onchange="changeLayer('ease_of_use', this.value)">
-                <option value="">None</option>
-                <option value="./assets/png/ease_of_use_1.png">Level 1</option>
-            </select>
-        </div>
+            <!-- Containability Menu -->
+            <div class="menu-group">
+                <label for="containability-select">Choose Containability:</label>
+                <select id="containability-select" onchange="changeLayer('containability', this.value)">
+                    <option value="">None</option>
+                    <option value="./assets/png/containability_1.png">Level 1</option>
+                    <option value="./assets/png/containability_2.png">Level 2</option>
+                    <option value="./assets/png/containability_3.png">Level 3</option>
+                    <option value="./assets/png/containability_4.png">Level 4</option>
+                    <option value="./assets/png/containability_5.png">Level 5</option>
+                </select>
+            </div>
 
-        <!-- danger_level Menu -->
-        <div class="menu-group">
-            <label for="danger_level-select">Choose Danger Level:</label>
-            <select id="danger_level-select" onchange="changeLayer('danger_level', this.value)">
-                <option value="">None</option>
-                <option value="./assets/png/danger_level_2.png">Level 2</option>
-            </select>
-        </div>
-        <button onclick="downloadSymbol()">Download Final Picture</button>
-    </div>
+            <!-- ease_of_use Menu -->
+            <div class="menu-group">
+                <label for="ease_of_use-select">Choose Ease of Use:</label>
+                <select id="ease_of_use-select" onchange="changeLayer('ease_of_use', this.value)">
+                    <option value="">None</option>
+                    <option value="./assets/png/ease_of_use_1.png">Level 1</option>
+                    <option value="./assets/png/ease_of_use_2.png">Level 2</option>
+                    <option value="./assets/png/ease_of_use_3.png">Level 3</option>
+                    <option value="./assets/png/ease_of_use_4.png">Level 4</option>
+                    <option value="./assets/png/ease_of_use_5.png">Level 5</option>
+                </select>
+            </div>
 
+            <!-- danger_level Menu -->
+            <div class="menu-group">
+                <label for="danger_level-select">Choose Danger Level:</label>
+                <select id="danger_level-select" onchange="changeLayer('danger_level', this.value)">
+                    <option value="">None</option>
+                    <option value="./assets/png/danger_level_1.png">Level 1</option>
+                    <option value="./assets/png/danger_level_2.png">Level 2</option>
+                    <option value="./assets/png/danger_level_3.png">Level 3</option>
+                    <option value="./assets/png/danger_level_4.png">Level 4</option>
+                    <option value="./assets/png/danger_level_5.png">Level 5</option>
+                </select>
+            </div>
+            <button onclick="downloadSymbol()" class="btn btn-primary">Download Final Picture</button>
+        </div>
 </body>
 
 </html>
