@@ -17,7 +17,7 @@
     <div class="sym-container">
         <div id="sym-canvas">
             <!--This is the base, it always stays-->
-            <img id="base" class="sym-layer" src="/assets/png/type.png">
+            <img id="base" class="sym-layer" src="./assets/png/type.png">
 
             <!--This is the symbol in the center-->
             <img id="type" class="sym-layer" src="" alt="">
@@ -34,7 +34,7 @@
             <label for="type-select">Choose Type:</label>
             <select id="type-select" onchange="changeLayer('type', this.value)">
                 <option value="">None</option>
-                <option value="/assets/png/psychological.png">Psychological</option>
+                <option value="./assets/png/psychological.png">Psychological</option>
             </select>
         </div>
 
@@ -43,7 +43,7 @@
             <label for="containability-select">Choose Containability:</label>
             <select id="containability-select" onchange="changeLayer('containability', this.value)">
                 <option value="">None</option>
-                <option value="/assets/png/containability_4.png">Level 4</option>
+                <option value="./assets/png/containability_4.png">Level 4</option>
             </select>
         </div>
 
@@ -52,7 +52,7 @@
             <label for="ease_of_use-select">Choose Ease of Use:</label>
             <select id="ease_of_use-select" onchange="changeLayer('ease_of_use', this.value)">
                 <option value="">None</option>
-                <option value="/assets/png/ease_of_use_1.png">Level 1</option>
+                <option value="./assets/png/ease_of_use_1.png">Level 1</option>
             </select>
         </div>
 
@@ -61,7 +61,7 @@
             <label for="danger_level-select">Choose Danger Level:</label>
             <select id="danger_level-select" onchange="changeLayer('danger_level', this.value)">
                 <option value="">None</option>
-                <option value="/assets/png/danger_level_2.png">Level 2</option>
+                <option value="./assets/png/danger_level_2.png">Level 2</option>
             </select>
         </div>
         <button onclick="downloadSymbol()">Download Final Picture</button>
